@@ -22,7 +22,14 @@ First, you create a stub file like this:
 Then, you run `fetch-bot` on the stub: 
 
 ```bash=
-fetch-bot example.zip.fetchbot
+$ fetch-bot example.zip.fetchbot
 ```
 
-`fetch-bot` will download the file to `example.zip` (the `.fetchbot` extension is removed) and verify the hash. 
+`fetch-bot` will download the file to `example.zip` (the `.fetchbot` extension is removed) and verify the hash: 
+
+```bash=
+$ ls
+example.zip.fetchbot
+example.zip
+```
+
