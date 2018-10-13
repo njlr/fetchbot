@@ -59,3 +59,21 @@ fetchbot
 
 We provide a portable app for Windows, so how you install it is up to you. Please see the [releases page](https://github.com/njlr/fetchbot/releases). 
 
+## FAQ
+
+### Why not put everything into source-control?
+
+Large binaries should not be placed under source-control. 
+
+### Why not Git submodules?
+
+Not every artefact you might want is available as a Git repo. 
+
+### Why not wget? 
+
+Fetchbot forces you to provide a file-hash; wget does not. 
+
+### Why not a Bash script? 
+
+Fetchbot is less error-prone and available for Windows. 
+
