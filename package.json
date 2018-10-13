@@ -6,8 +6,11 @@
   "author": "njlr <njlr@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "transpile": "rollup ./src/index.js -f cjs -o bundle.js", 
-    "build": "pkg ./bundle.js"
+    "compile": "rollup ./src/index.js -f cjs -o ./dist/index.js", 
+    "bundle-macos": "pkg ./dist/index.js --target node8-macos-x64 -o ./dist/fetchbot-macos ",
+    "bundle-linux": "pkg ./dist/index.js --target node8-linux-x64 -o ./dist/fetchbot-linux ",
+    "bundle-windows": "pkg ./dist/index.js --target node8-windows-x64 -o ./dist/fetchbot-windows ",
+    "build": "rm -rf dist && mkdir -p dist && yarn compile && yarn bundle-macos && yarn bundle-linux && yarn bundle-windows"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",

@@ -1,7 +1,5 @@
 /node_modules
-/out
+/dist
 /yarn-error.log
 /example.zip
 /invalid.zip
-/bundle.js
-/bundle-*
