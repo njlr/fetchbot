@@ -1,9 +1,13 @@
 language: node_js
+env:
+- PKG_CACHE_PATH=/pkg-cache
 node_js:
 - '10'
 script: yarn build
 cache:
   yarn: true
+  directories: 
+  - $PKG_CACHE_PATH
 deploy:
   provider: releases
   api_key:
