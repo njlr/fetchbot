@@ -33,3 +33,29 @@ example.zip.fetchbot
 example.zip
 ```
 
+## Installation
+
+Fetchbot is provided as a self-contained binary. See the [releases page](https://github.com/njlr/fetchbot/releases) for downloads.
+
+To install Fetchbot, just place it on your path.
+
+### macOS
+
+```bash=
+wget "https://github.com/njlr/fetchbot/releases/download/v1.0.0/fetchbot-macos" -O /usr/local/bin/fetchbot
+chmod +x /usr/local/bin/fetchbot
+fetchbot
+```
+
+### Linux
+
+```bash=
+sudo wget "https://github.com/njlr/fetchbot/releases/download/v1.0.0/fetchbot-linux" -O /usr/bin/fetchbot
+sudo chmod +x /usr/bin/fetchbot
+fetchbot
+```
+
+### Windows
+
+We provide a portable app for Windows, so how you install it is up to you. Please see the [releases page](https://github.com/njlr/fetchbot/releases). 
+
