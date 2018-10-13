@@ -16,6 +16,7 @@ deploy:
   - "./dist/fetchbot-macos"
   - "./dist/fetchbot-linux"
   - "./dist/fetchbot-windows"
+  skip_cleanup: true
   on:
     repo: njlr/fetchbot
     tags: true
