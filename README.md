@@ -1,6 +1,6 @@
-# fetch-bot
+# fetchbot
 
-`fetch-bot` is a simple tool for fetching files with a known SHA256 hash. You can use `fetch-bot` as a building-block in your build-scripts to ensure reproducible builds. 
+`fetchbot` is a simple tool for fetching files with a known SHA256 hash. You can use `fetchbot` as a building-block in your build-scripts to ensure reproducible builds. 
 
 This is just a proof-of-concept, and there are many improvements that could be made! 
 
@@ -19,10 +19,17 @@ First, you create a stub file like this:
 }
 ```
 
-Then, you run `fetch-bot` on the stub: 
+Then, you run `fetchbot` on the stub: 
 
 ```bash=
-fetch-bot example.zip.fetchbot
+$ fetchbot example.zip.fetchbot
 ```
 
-`fetch-bot` will download the file to `example.zip` (the `.fetchbot` extension is removed) and verify the hash. 
+`fetchbot` will download the file to `example.zip` (the `.fetchbot` extension is removed) and verify the hash: 
+
+```bash=
+$ ls
+example.zip.fetchbot
+example.zip
+```
+
