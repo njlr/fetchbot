@@ -71,9 +71,9 @@ Not every artefact you might want is available as a Git repo.
 
 ### Why not wget? 
 
-Fetchbot forces you to provide a file-hash; wget does not. 
+Fetchbot forces you to provide a file-hash; wget does not. Fetchbot is idempotent. 
 
 ### Why not a Bash script? 
 
-Fetchbot is less error-prone and available for Windows. 
+Usability. Fetchbot is less error-prone and available for Windows. 
 
